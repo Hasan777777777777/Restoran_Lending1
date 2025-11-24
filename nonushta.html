@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonushta</title>
+    <link rel="stylesheet" href="nonushta.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nonushta Menyusi</h1>
+        <p class="subtitle">Kunning eng muhim ovqati - sog'lom va mazali nonushta</p>
+        
+        <div class="foods-container">
+            <div class="food-item">
+                <div class="food-price">25,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop" alt="Nonushta Oshi">
+                <h2>Nonushta Oshi</h2>
+                <p>Guruch, go'sht, sabzi, piyoz va an'anaviy ziravorlar</p>
+                <div class="food-tags">
+                    <span class="tag popular">Mashhur</span>
+                    <span class="tag traditional">An'anaviy</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">35,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop" alt="Nonushta Burger">
+                <h2>Nonushta Burger</h2>
+                <p>Go'sht, tuxum, salat, pomidor va maxsus sous</p>
+                <div class="food-tags">
+                    <span class="tag">Yevropa</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">30,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop" alt="Smoothie Bowl">
+                <h2>Smoothie Bowl</h2>
+                <p>Meva, yog', urug'lar, asal va yangi mevalar</p>
+                <div class="food-tags">
+                    <span class="tag healthy">Sog'lom</span>
+                    <span class="tag new">Yangi</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">18,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" alt="Qaymoq Non">
+                <h2>Qaymoq Non</h2>
+                <p>Issiq non, qaymoq, murabbo va yangi qaymoq</p>
+                <div class="food-tags">
+                    <span class="tag traditional">An'anaviy</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">22,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Omlet">
+                <h2>Omlet</h2>
+                <p>Tuxum, pomidor, qo'ziqorin, pishloq va ko'katlar</p>
+                <div class="food-tags">
+                    <span class="tag new">Yangi</span>
+                    <span class="tag">Protein</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">20,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?w=400&h=300&fit=crop" alt="Yogurtli Musli">
+                <h2>Yogurtli Musli</h2>
+                <p>Yogurt, musli, meva, asal va yong'oq</p>
+                <div class="food-tags">
+                    <span class="tag healthy">Sog'lom</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const foodName = this.parentElement.querySelector('h2').textContent;
+                const foodPrice = this.parentElement.querySelector('.food-price').textContent;
+                alert(`Rahmat! ${foodName} - ${foodPrice} buyurtmangiz qabul qilindi!`);
+            });
+        });
+    </script>
+</body>
+</html>

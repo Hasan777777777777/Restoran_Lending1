@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salatlar</title>
+    <link rel="stylesheet" href="salatlar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salatlar Menyusi</h1>
+        <p class="subtitle">Tabiiy va foydali ingredientlardan tayyorlangan yangi salatlar</p>
+        
+        <div class="foods-container">
+            <div class="food-item">
+                <div class="food-price">45,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop" alt="Sezar Salat">
+                <h2>Sezar Salat</h2>
+                <p>Xurmo, parmezan, sezar sousi va yangi salat barglari</p>
+                <div class="food-tags">
+                    <span class="tag vegetarian">Vegetarian</span>
+                    <span class="tag new">Yangi</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">35,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Olivye Salat">
+                <h2>Olivye Salat</h2>
+                <p>Kartoshka, sabzi, bodring, tuxum, kolbasa va mayonez</p>
+                <div class="food-tags">
+                    <span class="tag">Klassik</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">65,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop" alt="Krevetka Salat">
+                <h2>Krevetka Salat</h2>
+                <p>Krevetka, avakado, mix salat va limon sousi</p>
+                <div class="food-tags">
+                    <span class="tag new">Yangi</span>
+                    <span class="tag">Premium</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">40,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&h=300&fit=crop" alt="Grecheskiy Salat">
+                <h2>Grecheskiy Salat</h2>
+                <p>Pomidor, bodring, feta pishlog'i, zaituun va zaytun yog'i</p>
+                <div class="food-tags">
+                    <span class="tag vegetarian">Vegetarian</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">50,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=300&fit=crop" alt="Tovuq Salat">
+                <h2>Tovuq Salat</h2>
+                <p>Grill tovuq, salat barglari, pomidor va maxsus sous</p>
+                <div class="food-tags">
+                    <span class="tag">Protein</span>
+                </div>
+
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">30,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop" alt="Mojito Salat">
+                <h2>Mojito Salat</h2>
+                <p>Noka, bodring, rediska, yog' va yangi ko'katlar</p>
+                <div class="food-tags">
+                    <span class="tag vegetarian">Vegetarian</span>
+                    <span class="tag">Yengil</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const foodName = this.parentElement.querySelector('h2').textContent;
+                const foodPrice = this.parentElement.querySelector('.food-price').textContent;
+                alert(`Rahmat! ${foodName} - ${foodPrice} buyurtmangiz qabul qilindi!`);
+            });
+        });
+    </script>
+</body>
+</html>

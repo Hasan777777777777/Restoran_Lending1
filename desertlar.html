@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desertlar</title>
+    <link rel="stylesheet" href="desertlar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desertlar Menyusi</h1>
+        <p class="subtitle">Hayotingizni shirinlashtiradigan lazzatli desertlar</p>
+        
+        <div class="foods-container">
+            <div class="food-item">
+                <div class="food-price">35,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Shokoladli Tort">
+                <h2>Shokoladli Tort</h2>
+                <p>Belgiya shokoladi, yangi qaymoq va shokolad kremi</p>
+                <div class="food-tags">
+                    <span class="tag popular">Mashhur</span>
+                    <span class="tag">Shokolad</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">25,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Vanil Muzqaymoq">
+                <h2>Vanil Muzqaymoq</h2>
+                <p>Tabiiy vanil, yangi qaymoq va vanil drupalari</p>
+                <div class="food-tags">
+                    <span class="tag">Sovuq</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">20,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop" alt="Halva">
+                <h2>Halva</h2>
+                <p>An'anaviy shirinlik, yong'oq va asal asosida</p>
+                <div class="food-tags">
+                    <span class="tag traditional">An'anaviy</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">30,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?w=400&h=300&fit=crop" alt="Chizkeyk">
+                <h2>Chizkeyk</h2>
+                <p>Yumshoq, kremli chizkeyk va qulupnay sousi</p>
+                <div class="food-tags">
+                    <span class="tag new">Yangi</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">28,000 so'm</div>
+                <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=300&fit=crop" alt="Qulupnay Muzqaymoq">
+                <h2>Qulupnay Muzqaymoq</h2>
+                <p>Yangi qulupnay, qaymoq va qulupnay bo'laklari</p>
+                <div class="food-tags">
+                    <span class="tag">Mevali</span>
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="food-price">40,000 so'm</div>
+                <img src="https://kubnews.ru/upload/dev2fun.imagecompress/webp/resize_cache/iblock/dac/1200_800_2/ovrdrqv4xjb8riwfqkc58vva0934vlwn.webp" alt="Paxlava">
+                <h2>Paxlava</h2>
+                <p>Yupqa qatlamlar, yong'oq, asal va ziravorlar</p>
+                <div class="food-tags">
+                    <span class="tag traditional">An'anaviy</span>
+                    <span class="tag premium">Premium</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const foodName = this.parentElement.querySelector('h2').textContent;
+                const foodPrice = this.parentElement.querySelector('.food-price').textContent;
+                alert(`Rahmat! ${foodName} - ${foodPrice} buyurtmangiz qabul qilindi!`);
+            });
+        });
+    </script>
+</body>
+</html>
